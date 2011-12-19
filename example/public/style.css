@@ -172,6 +172,7 @@ table {
 	td {
 		vertical-align: top;
 		padding: 1em 0;
+		white-space: nowrap;
 	}
 
 	.label {
