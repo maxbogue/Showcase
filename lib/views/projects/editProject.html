@@ -1,0 +1,24 @@
+<h2>Edit Project</h2>
+<p>
+	<form action="create" method="post">
+		<table>
+		    <tr>
+		        <td class="label">Slug:</td>
+				<td class="field">${project.slug}</td>
+		    </tr>
+			<tr>
+				<td class="label"><label for="title">Title:</label></td>
+				<td class="field"><input name="title" id="title" type="text" value="${project.title}"></td>
+			</tr>
+			<tr>
+				<td class="label"><label for="content">Content:</label></td>
+				<td class="field"><textarea name="content" id="content">${project.content}</textarea></td>
+			</tr>
+			<tr>
+				<td class="label"></td>
+				<td class="field"><input type="submit" value="Post"></td>
+			</tr>
+			<input name="slug" type="hidden" value="${project.slug}">
+		</table>
+	</form>
+</p>

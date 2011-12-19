@@ -1,0 +1,6 @@
+{{each(i, project) projects}}
+<h3><a href="projects/${project.slug}">${project.title}</a></h3>
+<p>${project.date.format('mmmm d, yyyy')}</p>
+{{html project.renderedContent}}
+{{/each}}
+{{if user}}<a href="./create">Create New Project</a>{{/if}}
