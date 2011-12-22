@@ -1,8 +1,8 @@
 <h3>${project.title}</h3>
 {{if user}}
 <p>
-	<a href="/edit/${project.slug}">edit</a> |
-	<a href="/delete/${project.slug}">delete</a>
+	<a href="${settings.projectsPath}/edit/${project.slug}">edit</a> |
+	<a href="${settings.projectsPath}/delete/${project.slug}">delete</a>
 </p>
 {{/if}}
 <p>${project.date.format('mmmm d, yyyy')}</p>

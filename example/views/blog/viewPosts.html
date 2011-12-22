@@ -1,6 +1,6 @@
 {{each(i, post) posts}}
-<h3><a href="${url}${post.slug}">${post.title}</a></h3>
+<h3><a href="${settings.blogPath}/${post.slug}">${post.title}</a></h3>
 <p>${post.date.format('mmmm d, yyyy')}</p>
 {{html post.renderedContent}}
 {{/each}}
-{{if user}}<a href="./create">Create new post</a>{{/if}}
+{{if user}}<a href="${settings.blogPath}/create">Create new post</a>{{/if}}
